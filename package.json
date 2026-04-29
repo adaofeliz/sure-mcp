@@ -1,0 +1,35 @@
+{
+  "name": "@adflz/sure-mcp",
+  "version": "0.1.0",
+  "description": "MCP server for the Sure finance API — CRUD for transactions & tags, read for categories, merchants, accounts.",
+  "type": "module",
+  "license": "MIT",
+  "author": "Adão Viana Pinto <adaofeliz@users.noreply.github.com>",
+  "repository": { "type": "git", "url": "git+https://github.com/adaofeliz/sure-mcp.git" },
+  "homepage": "https://github.com/adaofeliz/sure-mcp#readme",
+  "bugs": { "url": "https://github.com/adaofeliz/sure-mcp/issues" },
+  "keywords": ["mcp", "model-context-protocol", "sure", "finance", "llm", "ai-agents"],
+  "bin": { "sure-mcp": "./dist/index.js" },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": ["dist", "README.md", "LICENSE"],
+  "engines": { "node": ">=20" },
+  "publishConfig": { "access": "public" },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "typecheck": "tsc --noEmit",
+    "start": "node dist/index.js",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "bun run clean && bun run build"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "zod": "^3.25.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "tsup": "^8.3.0",
+    "typescript": "^5.5.0"
+  }
+}
