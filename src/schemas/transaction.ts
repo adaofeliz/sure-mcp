@@ -11,7 +11,7 @@ export type NestedAccount = z.infer<typeof NestedAccount>;
 export const NestedCategory = z.object({
   id: UUID,
   name: z.string(),
-  classification: Classification,
+  classification: Classification.optional(),
   color: z.string(),
   icon: z.string(),
 }).passthrough();

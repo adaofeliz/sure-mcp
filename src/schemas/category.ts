@@ -10,7 +10,7 @@ export type CategoryParent = z.infer<typeof CategoryParent>;
 export const Category = z.object({
   id: UUID,
   name: z.string(),
-  classification: Classification,
+  classification: Classification.optional(),
   color: z.string(),
   icon: z.string(),
   parent: CategoryParent.nullable().optional(),
