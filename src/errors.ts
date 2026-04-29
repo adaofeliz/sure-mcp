@@ -1,6 +1,6 @@
 export type McpErrorResponse = {
   content: [{ type: 'text'; text: string }];
-  structuredContent: object;
+  structuredContent: { [key: string]: unknown };
   isError: true;
 };
 
