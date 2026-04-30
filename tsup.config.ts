@@ -8,9 +8,9 @@ export default defineConfig({
   clean: true,
   minify: false,
   sourcemap: false,
-  dts: true,
+  dts: false,
   banner: {
     js: '#!/usr/bin/env node',
   },
-  onSuccess: 'chmod +x dist/index.js',
+  onSuccess: 'chmod +x dist/index.js && tsc --emitDeclarationOnly',
 });
