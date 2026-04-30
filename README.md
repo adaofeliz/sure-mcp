@@ -1,6 +1,6 @@
 # sure-mcp
 
-[![npm](https://img.shields.io/npm/v/@adflz/sure-mcp)](https://www.npmjs.com/package/@adflz/sure-mcp) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) [![Node >=20](https://img.shields.io/badge/node-%3E%3D20-brightgreen)](https://nodejs.org)
+[![npm](https://img.shields.io/npm/v/@adflz/sure-mcp)](https://www.npmjs.com/package/@adflz/sure-mcp) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) [![Node >=22](https://img.shields.io/badge/node-%3E%3D22-brightgreen)](https://nodejs.org)
 
 A Model Context Protocol (MCP) server for the [Sure](https://github.com/we-promise/sure) finance API. Exposes 16 typed tools for AI agents to read accounts, categories, and merchants; and full CRUD for transactions and tags. Designed for transaction-enrichment automation: let an agent look up merchant details on the web, assign categories, manage tags, and update transactions autonomously.
 
@@ -8,7 +8,7 @@ A Model Context Protocol (MCP) server for the [Sure](https://github.com/we-promi
 
 ## Requirements
 
-- Node.js 20 or higher
+- Node.js 22 or higher
 - A running [Sure](https://github.com/we-promise/sure) instance (self-hosted or cloud)
 - An API key generated from your Sure account settings
 

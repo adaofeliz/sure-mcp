@@ -13,7 +13,7 @@
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "files": ["dist", "README.md", "LICENSE"],
-  "engines": { "node": ">=20" },
+  "engines": { "node": ">=22" },
   "publishConfig": { "access": "public" },
   "scripts": {
     "build": "tsup",
@@ -28,8 +28,8 @@
     "zod": "^3.25.0"
   },
   "devDependencies": {
-    "@types/node": "^20.14.0",
-    "tsup": "^8.3.0",
-    "typescript": "^5.5.0"
+    "@types/node": "^22.0.0",
+    "tsup": "^8.5.1",
+    "typescript": "^6.0.3"
   }
 }
